@@ -10,7 +10,7 @@ https://github.com/chrisstaite/DoTe. This has 2 advantages:
 ```shell
 #!/bin/sh
 
-podman pull pombeirp/pihole-dote:latest
+podman pull pombeirp/pihole-dote:2023.02.2
 podman stop pihole
 podman rm pihole
 podman run -d --network dns --restart always \
@@ -26,7 +26,7 @@ podman run -d --network dns --restart always \
     -e PIHOLE_DNS_="127.0.0.1#5053" \
     -e ServerIP="10.0.5.3" \
     -e IPv6="True" \
-    pombeirp/pihole-dote:latest
+    pombeirp/pihole-dote:2023.02.2
 ```
 
 > Tested on a UniFi Dream Machine Pro with UniFi OS 2.4.27.
